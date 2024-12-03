@@ -1,0 +1,24 @@
+{
+  "name": "kysely-ctl-async-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "kysely": "kysely",
+    "success-test": "npm run build && node dist/kysely.config.js",
+    "failure-test": "npm run kysely migrate:make test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kysely": "^0.27.4",
+    "kysely-ctl": "^0.9.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.7.2"
+  }
+}
